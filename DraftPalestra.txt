@@ -1,0 +1,74 @@
+Para entender a fundo qualquer tecnologia precisamos saber os erros e problemas do passado para saber o que e como eles foram solucionados nas tecnologias atuais.
+
+Beleza então. =P Fig: de um cara engraçado que tomou porrada
+
+Se você pesquisar na Wikipedia sobre containers nas primeiras linhas você irá encontrar algo como: 
+
+Containers são uma virtualização a nível de sistema operacional que permitem a existência de multiplos e isolados user-space........... 
+Figura de um cara dormindo
+
+Container é uma virtualização ?
+
+
+
+
+
+ 
+
+Geralmente um usuário dava entrada em rajadas de informação seguida por longas pausas, mas um outro grupo de usuários poderia preencher esse tempo ocioso.
+
+
+
+E o maior benefício que o time-sharing trouxe foi o uso eficiente dos recursos de um computador.
+
+Cloud computing é baseado nesse conceito se você pensar... EU tenho um limitado numero de servidores a serem compartilhados com milhões de usuários. 
+Eficientemente?
+
+Para falar de Containers  e o futuro deles nos vamos falar de virtualização então porém existem diversos tipo por exemplo
+
+Tipos de virtualização:
+
+Hardware virtualization
+Memory virtualization
+Service virtualization,
+Application virtualization 
+Operating-system-level virtualization,
+
+Hoje iremos falar mais sobre Hardware virtualization e Operating system-level virtualization que são os containers.
+
+
+Como funciona - Virtualização de hardware?
+
+- The term "virtualization" was coined in the 1960s to refer to a virtual machine (sometimes called "pseudo machine"), a term which itself dates from the experimental IBM M44/44X system The creation and management of virtual machines has been called "platform virtualization", or "server virtualization", more recently.
+
+- Figura da arquitetura de virtualização mostrando guest host e o hypervisor
+
+- Demo: Virtualbox uma máquina sendo criada
+
+
+- Containers
+- Definição 
+- Passado
+- Por que só ficaram famosos agora?
+  - Docker, benefícios docker, conhecendo internamente o docker
+
+- Demo: Docker demo
+
+
+- Unikernels
+
+ - Eles vieram pra resolver qual problema?
+ - Eles permitem o que?
+ - Beneficios: Segurança
+ - Benefícios: Startup Time
+ - Parênteses: AWS Lambda & Serverless Architecture
+ - Demo:
+
+
+
+
+
+
+
+
+
