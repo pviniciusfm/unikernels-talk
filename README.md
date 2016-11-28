@@ -70,6 +70,7 @@ Presentations are written using HTML or Markdown but there's also an online edit
 Here's a barebones example of a fully working reveal.js presentation:
 ```html
 <html>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<head>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -86,6 +87,24 @@ Here's a barebones example of a fully working reveal.js presentation:
 			Reveal.initialize();
 		</script>
 	</body>
+=======
+        <head>
+                <link rel="stylesheet" href="css/reveal.css">
+                <link rel="stylesheet" href="css/theme/white.css">
+        </head>
+        <body>
+                <div class="reveal">
+                        <div class="slides">
+                                <section>Slide 1</section>
+                                <section>Slide 2</section>
+                        </div>
+                </div>
+                <script src="js/reveal.js"></script>
+                <script>
+                        Reveal.initialize();
+                </script>
+        </body>
+>>>>>>> First PT-BR Version
 </html>
 ```
 
@@ -93,6 +112,7 @@ The presentation markup hierarchy needs to be `.reveal > .slides > section` wher
 
 ```html
 <div class="reveal">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<div class="slides">
 		<section>Single Horizontal Slide</section>
 		<section>
@@ -100,6 +120,15 @@ The presentation markup hierarchy needs to be `.reveal > .slides > section` wher
 			<section>Vertical Slide 2</section>
 		</section>
 	</div>
+=======
+        <div class="slides">
+                <section>Single Horizontal Slide</section>
+                <section>
+                        <section>Vertical Slide 1</section>
+                        <section>Vertical Slide 2</section>
+                </section>
+        </div>
+>>>>>>> First PT-BR Version
 </div>
 ```
 
@@ -111,11 +140,19 @@ This is based on [data-markdown](https://gist.github.com/1343518) from [Paul Iri
 
 ```html
 <section data-markdown>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<script type="text/template">
 		## Page title
 
 		A paragraph with some text and a [link](http://hakim.se).
 	</script>
+=======
+        <script type="text/template">
+                ## Page title
+
+                A paragraph with some text and a [link](http://hakim.se).
+        </script>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -126,10 +163,17 @@ You can write your content as a separate file and have reveal.js load it at runt
 When used locally, this feature requires that reveal.js [runs from a local web server](#full-setup).
 
 ```html
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 <section data-markdown="example.md"  
          data-separator="^\n\n\n"  
          data-separator-vertical="^\n\n"  
          data-separator-notes="^Note:"  
+=======
+<section data-markdown="example.md"
+         data-separator="^\n\n\n"
+         data-separator-vertical="^\n\n"
+         data-separator-notes="^Note:"
+>>>>>>> First PT-BR Version
          data-charset="iso-8859-15">
 </section>
 ```
@@ -140,10 +184,17 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
 
 ```html
 <section data-markdown>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<script type="text/template">
 		- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
 		- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 	</script>
+=======
+        <script type="text/template">
+                - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+                - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+        </script>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -153,10 +204,17 @@ Special syntax (in html comment) is available for adding attributes to the slide
 
 ```html
 <section data-markdown>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<script type="text/template">
 	<!-- .slide: data-background="#ff0000" -->
 		Markdown content
 	</script>
+=======
+        <script type="text/template">
+        <!-- .slide: data-background="#ff0000" -->
+                Markdown content
+        </script>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -168,6 +226,7 @@ At the end of your page you need to initialize reveal by running the following c
 ```javascript
 Reveal.initialize({
 
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// Display controls in the bottom right corner
 	controls: true,
 
@@ -258,6 +317,98 @@ Reveal.initialize({
 	// - Set to 0 to disable movement along an axis
 	parallaxBackgroundHorizontal: null,
 	parallaxBackgroundVertical: null
+=======
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null
+>>>>>>> First PT-BR Version
 
 });
 ```
@@ -283,6 +434,7 @@ See below for a list of configuration options related to sizing, including defau
 ```javascript
 Reveal.initialize({
 
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	...
 
 	// The "normal" size of the presentation, aspect ratio will be preserved
@@ -297,6 +449,22 @@ Reveal.initialize({
 	// Bounds for smallest/largest possible scale to apply to content
 	minScale: 0.2,
 	maxScale: 1.5
+=======
+        ...
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 960,
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5
+>>>>>>> First PT-BR Version
 
 });
 ```
@@ -306,6 +474,7 @@ If you wish to disable this behavior and do your own scaling (e.g. using media q
 ```javascript
 Reveal.initialize({
 
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	...
 
 	width: "100%",
@@ -313,6 +482,15 @@ Reveal.initialize({
 	margin: 0,
 	minScale: 1,
 	maxScale: 1
+=======
+        ...
+
+        width: "100%",
+        height: "100%",
+        margin: 0,
+        minScale: 1,
+        maxScale: 1
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -322,6 +500,7 @@ Reveal.js doesn't _rely_ on any third party scripts to work but a few optional l
 
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	dependencies: [
 		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
 		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -342,6 +521,28 @@ Reveal.initialize({
 		// MathJax
 		{ src: 'plugin/math/math.js', async: true }
 	]
+=======
+        dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+
+                // Speaker notes
+                { src: 'plugin/notes/notes.js', async: true },
+
+                // MathJax
+                { src: 'plugin/math/math.js', async: true }
+        ]
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -358,7 +559,11 @@ A 'ready' event is fired when reveal.js has loaded all non-async dependencies an
 
 ```javascript
 Reveal.addEventListener( 'ready', function( event ) {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// event.currentSlide, event.indexh, event.indexv
+=======
+        // event.currentSlide, event.indexh, event.indexv
+>>>>>>> First PT-BR Version
 } );
 ```
 
@@ -379,9 +584,15 @@ You can also override the slide duration for individual slides and fragments by 
 
 ```html
 <section data-autoslide="2000">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<p>After 2 seconds the first fragment will be shown.</p>
 	<p class="fragment" data-autoslide="10000">After 10 seconds the next fragment will be shown.</p>
 	<p class="fragment">Now, the fragment is displayed for 2 seconds before the next slide is shown.</p>
+=======
+        <p>After 2 seconds the first fragment will be shown.</p>
+        <p class="fragment" data-autoslide="10000">After 10 seconds the next fragment will be shown.</p>
+        <p class="fragment">Now, the fragment is displayed for 2 seconds before the next slide is shown.</p>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -489,7 +700,11 @@ Some libraries, like MathJax (see [#226](https://github.com/hakimel/reveal.js/is
 
 ```javascript
 Reveal.addEventListener( 'slidechanged', function( event ) {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+=======
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+>>>>>>> First PT-BR Version
 } );
 ```
 
@@ -518,7 +733,11 @@ Furthermore you can also listen to these changes in state via JavaScript:
 
 ```javascript
 Reveal.addEventListener( 'somestate', function() {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// TODO: Sprinkle magic
+=======
+        // TODO: Sprinkle magic
+>>>>>>> First PT-BR Version
 }, false );
 ```
 
@@ -530,7 +749,11 @@ Slides are contained within a limited portion of the screen by default to allow 
 All CSS color formats are supported, like rgba() or hsl().
 ```html
 <section data-background-color="#ff0000">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>Color</h2>
+=======
+        <h2>Color</h2>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -545,10 +768,17 @@ By default, background images are resized to cover the full page. Available opti
 | data-background-repeat       | no-repeat  | See [background-repeat](https://developer.mozilla.org/docs/Web/CSS/background-repeat) on MDN. |
 ```html
 <section data-background-image="http://example.com/image.png">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>Image</h2>
 </section>
 <section data-background-image="http://example.com/image.png" data-background-size="100px" data-background-repeat="repeat">
 	<h2>This background image will be sized to 100px and repeated</h2>
+=======
+        <h2>Image</h2>
+</section>
+<section data-background-image="http://example.com/image.png" data-background-size="100px" data-background-repeat="repeat">
+        <h2>This background image will be sized to 100px and repeated</h2>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -563,7 +793,11 @@ Automatically plays a full size video behind the slide.
 
 ```html
 <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-video-muted>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>Video</h2>
+=======
+        <h2>Video</h2>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -571,7 +805,11 @@ Automatically plays a full size video behind the slide.
 Embeds a web page as a background. Note that since the iframe is in the background layer, behind your slides, it is not possible to interact with the embedded page.
 ```html
 <section data-background-iframe="https://slides.com">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>Iframe</h2>
+=======
+        <h2>Iframe</h2>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -586,6 +824,7 @@ If you want to use a parallax scrolling background, set the first two config pro
 ```javascript
 Reveal.initialize({
 
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// Parallax background image
 	parallaxBackgroundImage: '', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
 
@@ -597,6 +836,19 @@ Reveal.initialize({
 	// - Set to 0 to disable movement along an axis
 	parallaxBackgroundHorizontal: 200,
 	parallaxBackgroundVertical: 50
+=======
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: 200,
+        parallaxBackgroundVertical: 50
+>>>>>>> First PT-BR Version
 
 });
 ```
@@ -610,11 +862,19 @@ The global presentation transition is set using the ```transition``` config valu
 
 ```html
 <section data-transition="zoom">
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>This slide will override the presentation transition and zoom!</h2>
 </section>
 
 <section data-transition-speed="fast">
 	<h2>Choose from three transition speeds: default, fast or slow!</h2>
+=======
+        <h2>This slide will override the presentation transition and zoom!</h2>
+</section>
+
+<section data-transition-speed="fast">
+        <h2>Choose from three transition speeds: default, fast or slow!</h2>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -667,6 +927,7 @@ The default fragment style is to start out invisible and fade in. This style can
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<p class="fragment grow">grow</p>
 	<p class="fragment shrink">shrink</p>
 	<p class="fragment fade-out">fade-out</p>
@@ -676,6 +937,17 @@ The default fragment style is to start out invisible and fade in. This style can
 	<p class="fragment highlight-red">highlight-red</p>
 	<p class="fragment highlight-green">highlight-green</p>
 	<p class="fragment highlight-blue">highlight-blue</p>
+=======
+        <p class="fragment grow">grow</p>
+        <p class="fragment shrink">shrink</p>
+        <p class="fragment fade-out">fade-out</p>
+        <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+        <p class="fragment current-visible">visible only once</p>
+        <p class="fragment highlight-current-blue">blue only once</p>
+        <p class="fragment highlight-red">highlight-red</p>
+        <p class="fragment highlight-green">highlight-green</p>
+        <p class="fragment highlight-blue">highlight-blue</p>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -683,9 +955,15 @@ Multiple fragments can be applied to the same element sequentially by wrapping i
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<span class="fragment fade-in">
 		<span class="fragment fade-out">I'll fade in, then out</span>
 	</span>
+=======
+        <span class="fragment fade-in">
+                <span class="fragment fade-out">I'll fade in, then out</span>
+        </span>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -693,9 +971,15 @@ The display order of fragments can be controlled using the ```data-fragment-inde
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<p class="fragment" data-fragment-index="3">Appears last</p>
 	<p class="fragment" data-fragment-index="1">Appears first</p>
 	<p class="fragment" data-fragment-index="2">Appears second</p>
+=======
+        <p class="fragment" data-fragment-index="3">Appears last</p>
+        <p class="fragment" data-fragment-index="1">Appears first</p>
+        <p class="fragment" data-fragment-index="2">Appears second</p>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -707,10 +991,17 @@ Some libraries, like MathJax (see #505), get confused by the initially hidden fr
 
 ```javascript
 Reveal.addEventListener( 'fragmentshown', function( event ) {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// event.fragment = the fragment DOM element
 } );
 Reveal.addEventListener( 'fragmenthidden', function( event ) {
 	// event.fragment = the fragment DOM element
+=======
+        // event.fragment = the fragment DOM element
+} );
+Reveal.addEventListener( 'fragmenthidden', function( event ) {
+        // event.fragment = the fragment DOM element
+>>>>>>> First PT-BR Version
 } );
 ```
 
@@ -720,13 +1011,21 @@ By default, Reveal is configured with [highlight.js](https://highlightjs.org/) f
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<pre><code data-trim data-noescape>
+=======
+        <pre><code data-trim data-noescape>
+>>>>>>> First PT-BR Version
 (def lazy-fib
   (concat
    [0 1]
    <mark>((fn rfib [a b]</mark>
         (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	</code></pre>
+=======
+        </code></pre>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -781,7 +1080,11 @@ Sometimes it's desirable to have an element, like an image or video, stretch to 
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>This video will use up the remaining space on the slide</h2>
+=======
+        <h2>This video will use up the remaining space on the slide</h2>
+>>>>>>> First PT-BR Version
     <video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
 </section>
 ```
@@ -802,10 +1105,17 @@ When reveal.js runs inside of an iframe it can optionally bubble all of its even
 
 ```javascript
 window.addEventListener( 'message', function( event ) {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	var data = JSON.parse( event.data );
 	if( data.namespace === 'reveal' && data.eventName ==='slidechanged' ) {
 		// Slide changed, see data.state for slide number
 	}
+=======
+        var data = JSON.parse( event.data );
+        if( data.namespace === 'reveal' && data.eventName ==='slidechanged' ) {
+                // Slide changed, see data.state for slide number
+        }
+>>>>>>> First PT-BR Version
 } );
 ```
 
@@ -813,6 +1123,7 @@ This cross-window messaging can be toggled on or off using configuration flags.
 
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	...,
 
 	// Exposes the reveal.js API through window.postMessage
@@ -820,6 +1131,15 @@ Reveal.initialize({
 
 	// Dispatches all reveal.js events to the parent window through postMessage
 	postMessageEvents: false
+=======
+        ...,
+
+        // Exposes the reveal.js API through window.postMessage
+        postMessage: true,
+
+        // Dispatches all reveal.js events to the parent window through postMessage
+        postMessageEvents: false
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -876,11 +1196,19 @@ When used locally, this feature requires that reveal.js [runs from a local web s
 
 ```html
 <section>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<h2>Some Slide</h2>
 
 	<aside class="notes">
 		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 	</aside>
+=======
+        <h2>Some Slide</h2>
+
+        <aside class="notes">
+                Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+        </aside>
+>>>>>>> First PT-BR Version
 </section>
 ```
 
@@ -910,12 +1238,21 @@ In some cases it can be desirable to run notes on a separate device from the one
 
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	...
 
 	dependencies: [
 		{ src: 'socket.io/socket.io.js', async: true },
 		{ src: 'plugin/notes-server/client.js', async: true }
 	]
+=======
+        ...
+
+        dependencies: [
+                { src: 'socket.io/socket.io.js', async: true },
+                { src: 'plugin/notes-server/client.js', async: true }
+        ]
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -951,6 +1288,7 @@ You can then access your master presentation at ```http://localhost:1947```
 Example configuration:
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// other options...
 
 	multiplex: {
@@ -970,6 +1308,27 @@ Reveal.initialize({
 
 		// other dependencies...
 	]
+=======
+        // other options...
+
+        multiplex: {
+                // Example values. To generate your own, see the socket.io server instructions.
+                secret: '13652805320794272084', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+                id: '1ea875674b17ca76', // Obtained from socket.io server
+                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+        },
+
+        // Don't forget to add the dependencies
+        dependencies: [
+                { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+                { src: 'plugin/multiplex/master.js', async: true },
+
+                // and if you want speaker notes
+                { src: 'plugin/notes-server/client.js', async: true }
+
+                // other dependencies...
+        ]
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -979,6 +1338,7 @@ Served from a publicly accessible static file server. Examples include: GitHub P
 Example configuration:
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// other options...
 
 	multiplex: {
@@ -995,6 +1355,24 @@ Reveal.initialize({
 
 		// other dependencies...
 	]
+=======
+        // other options...
+
+        multiplex: {
+                // Example values. To generate your own, see the socket.io server instructions.
+                secret: null, // null so the clients do not have control of the master presentation
+                id: '1ea875674b17ca76', // id, obtained from socket.io server
+                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+        },
+
+        // Don't forget to add the dependencies
+        dependencies: [
+                { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+                { src: 'plugin/multiplex/client.js', async: true }
+
+                // other dependencies...
+        ]
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -1017,6 +1395,7 @@ The socket.io server can play the role of static file server for your client pre
 Example configuration:
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// other options...
 
 	multiplex: {
@@ -1033,6 +1412,24 @@ Reveal.initialize({
 
 		// other dependencies...
 	]
+=======
+        // other options...
+
+        multiplex: {
+                // Example values. To generate your own, see the socket.io server instructions.
+                secret: null, // null so the clients do not have control of the master presentation
+                id: '1ea875674b17ca76', // id, obtained from socket.io server
+                url: 'example.com:80' // Location of your socket.io server
+        },
+
+        // Don't forget to add the dependencies
+        dependencies: [
+                { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+                { src: 'plugin/multiplex/client.js', async: true }
+
+                // other dependencies...
+        ]
+>>>>>>> First PT-BR Version
 ```
 
 It can also play the role of static file server for your master presentation and client presentations at the same time (as long as you don't want to use speaker notes). (Open [https://reveal-js-multiplex-ccjbegmaii.now.sh/](https://reveal-js-multiplex-ccjbegmaii.now.sh/) in two browsers. Navigate through the slides on one, and the other will update to match. Navigate through the slides on the second, and the first will update to match.) This is probably not desirable, because you don't want your audience to mess with your slides while you're presenting. ;)
@@ -1040,6 +1437,7 @@ It can also play the role of static file server for your master presentation and
 Example configuration:
 ```javascript
 Reveal.initialize({
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// other options...
 
 	multiplex: {
@@ -1057,6 +1455,25 @@ Reveal.initialize({
 
 		// other dependencies...
 	]
+=======
+        // other options...
+
+        multiplex: {
+                // Example values. To generate your own, see the socket.io server instructions.
+                secret: '13652805320794272084', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+                id: '1ea875674b17ca76', // Obtained from socket.io server
+                url: 'example.com:80' // Location of your socket.io server
+        },
+
+        // Don't forget to add the dependencies
+        dependencies: [
+                { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+                { src: 'plugin/multiplex/master.js', async: true },
+                { src: 'plugin/multiplex/client.js', async: true }
+
+                // other dependencies...
+        ]
+>>>>>>> First PT-BR Version
 });
 ```
 
@@ -1071,6 +1488,7 @@ Below is an example of how the plugin can be configured. If you don't intend to 
 ```js
 Reveal.initialize({
 
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	// other options ...
 
 	math: {
@@ -1081,6 +1499,18 @@ Reveal.initialize({
 	dependencies: [
 		{ src: 'plugin/math/math.js', async: true }
 	]
+=======
+        // other options ...
+
+        math: {
+                mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
+        dependencies: [
+                { src: 'plugin/math/math.js', async: true }
+        ]
+>>>>>>> First PT-BR Version
 
 });
 ```

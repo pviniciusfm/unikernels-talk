@@ -39,5 +39,9 @@ $selectionColor: #fff;
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	background: $backgroundColor;
+=======
+        background: $backgroundColor;
+>>>>>>> First PT-BR Version
 }

@@ -29,7 +29,11 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 
 // Background generator
 @mixin bodyBackground() {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	@include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
+=======
+        @include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
+>>>>>>> First PT-BR Version
 }
 
 

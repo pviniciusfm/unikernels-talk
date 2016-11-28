@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -306,4 +307,312 @@
 			});
 		</script>
 	</body>
+=======
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+                <title>Unikernels - A peak into the future of deployments</title>
+
+                <link rel="stylesheet" href="css/reveal.css">
+                <link rel="stylesheet" href="css/theme/moon.css">
+
+                <!-- Theme used for syntax highlighting of code -->
+                <link rel="stylesheet" href="lib/css/zenburn.css">
+
+                <!-- Printing and PDF exports -->
+                <script>
+                        var link = document.createElement( 'link' );
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                        document.getElementsByTagName( 'head' )[0].appendChild( link );
+                </script>
+                <style>
+                        #landing {
+                                background-position: : bottom right;
+                                background-size: : contain;
+                        }
+                </style>
+        </head>
+        <body>
+                <div class="reveal">
+                        <div class="slides">
+                                <section id="landing" data-background-image="img/delorean.jpg">
+                                        <h2 style="margin-top: -35%; margin-left: -10%; text-align: left;">Unikernels<br>A peek into the future</h2>
+                                </section>
+                                <!-- Quem sou -->
+                                <section>
+                                        <section>
+                                                <h3><b>Quem sou eu?</b></h3><br>
+                                                <img src="img/pv.jpg">
+                                                <p class="fragment">pviniciusfm@gmail.com</p>
+                                        </section>
+                                        <section>
+                                                <h3>Consultor na Avenue Code</h3>
+                                                <p class="fragment">Google Developer Bus e Hackathons</p>
+                                                <p class="fragment">Tomador de cerveja profissional</p>
+                                                <h3 class="fragment"><b>DOIDO!</b></h3>
+                                        </section>
+                                        <section data-background="https://media.giphy.com/media/cMV9akgudJiRW/giphy.gif"></section>
+                                </section>
+                                <!-- Fim Quem sou -->
+                                <section data-background-image="img/containers_susp.jpg" data-background-position="left">
+                                        <h3 style="margin-top: -30%; margin-left: -5%; text-align: left;">Containers</h3>
+                                </section>
+                                <section><h3>O que são containers de fato?<h3></section>
+                                <section><h3>Onde vivem?</h3></section>
+                                <section data-background-image="img/computer-walking.gif"></section>
+                                <section><h3>Como se alimentam?</h3></section>
+                                <section data-background-image="img/eat-computer.jpg"></section>
+                                <section><h3>Como se reproduzem?</h3></section>
+                                <section data-background-video="img/containers.mp4"></section>
+                                <section><h3>Para falar sobre o futuro dos containers</h3></section>
+                                <section><h3>É preciso viajar um pouco ao passado</h3></section>
+                                <section data-background-image="img/past-delorian.jpg"></section>
+                                <section data-background-image="img/nao-quero-passado.jpg" data-background-size="contain"></section>
+                                <section data-background-image="img/batman-slap.jpg" data-background-size="contain"></section>
+                                <section data-background-image="img/beat-up-troll.jpg" data-background-size="contain"></section>
+                                <section id="virtualization">
+                                        <section>
+                                                <p>A virtualização teve inicio nos anos 60, como um método para dividir logicamente os recursos de sistema providos por um mainframe</p>
+                                                <aside class="notes">
+                                                        <p>Os primeiros computadores eram extremamente caros e tipicamente fabricados para resolver um determinado e caracteristico conjunto de tarefas operadas através de paineis de controle via switches.  Estes programas poderiam durar horas ou ate mesmo semanas para rodar. Ao medida que os computadores aumentaram sua velocidadde e o tempo de execução foi ficando menor o tempo para carregar um próximo programa começou a ser uma preocupação.  Metodologias de processamento em lote evoluiram afim de resolver esse problema acabando como os "dead periods" ao enfileirar diversos programas. Assim que um programa anterior fosse completado o próximo era iniciado.
+							</p>
+						</aside>
+                                        </section>
+                                        <section data-background-image="img/IBM1401_1960.jpg">
+                                                <aside class="notes">
+                                                        Quando o programa finalmente acabava a execução o resultado era imprimido e retornado ao programador. O processo completo durava de dias e talvez o programador nem via o computador.
+							A alternativa de deixar o usuário operar o computador diretamente era muito cara pra ser pensada . Isto era devido o fato de o usuário demorar longos periodos para dar entrada no codigo a ser executado.. E ainda o computador estava ociosio.
+                                                </aside>
+                                        </section>
+                                        <section>
+                                                <p>Time-sharing foi envisionado para acabar com a ociosidade dos mainframes.<br><br><br>Foi constatado que um numero bem maior de usuários poderiam utilizar os mesmos recursos em conjunto. </p>
+                                        </section>
+                                        <section>
+                                                <p>O time-sharing, foi um dos pilares da computação ao qual conhecemos hoje, os processos, multiplexadores, threads foram originados do mesmo problema</p>
+                                        </section>
+                                        <section>
+                                                <h3>Mas existem vários tipos de virtualização</h3>
+                                                <ul>
+                                                        <li class="fragment">Hardware virtualization</li>
+                                                        <li class="fragment">Operating system-level virtualization</li>
+                                                        <li class="fragment">Partial Virtualization</li>
+                                                        <li class="fragment">Application virtualization</li>
+                                                </ul>
+                                        </section>
+
+                                        <section data-background-image="https://wiki.smartos.org/download/attachments/754141/bare+metal.png?version=1&modificationDate=1320431978000" data-background-size="60%"></section>
+                                        <section>
+                                                <h3>Benefícios da virtualização total</h3>
+                                                <ul>
+                                                        <li class="fragment">Isolation</li>
+                                                        <li class="fragment">Eficient resources utilization</li>
+                                                        <li class="fragment">Failover Capabilities</li>
+                                                        <li class="fragment">Checkpointing e Live Migration</li>
+                                                </ul>
+                                        </section>
+
+                                        <section>
+                                                <h3>Vagrant - Demo</h3>
+                                        </section>
+                                </section>
+
+                                <section>
+                                        <section>
+                                                <h3>O que os containers tem a ver com isso?</h3>
+                                        </section>
+
+                                        <section>
+                                                <h3>Quais são os problemas da virtualização total?</h3>
+                                        </section>
+                                        <section data-background-image="https://wiki.smartos.org/download/attachments/754141/bare+metal.png?version=1&modificationDate=1320431978000" data-background-size="60%"></section>
+
+                                        <section>
+                                                <h3>Overhead</h3>
+                                        </section>
+
+                                        <section>
+                                                <h3>Qual foi a solução pensada?</h3>
+                                                <h3>??????</h3>
+                                        </section>
+
+                                        <section>
+                                                <h3>Container</h3>
+                                                <p>É uma virtualização a nível de sistema operacional que permite a existência de multiplos e isolados user-spaces</p>
+                                        </section>
+                                        <section data-background-image="img/sleeping.jpg"></section>
+
+                                        <section>
+                                                <h3>Em outras palavras...</h3>
+                                                <p>A tecnologia permite o isolamento de recursos com um overhead menor</p>
+                                                <p>Uma vez que as chamadas de sistema ainda são feitas pelo mesmo kernel e você não precisa virtualizar todas as camadas</p>
+                                        </section>
+                                        <section data-background-image="img/vm-vs-container.png" data-background-size="60%"></section>
+
+                                        <section>
+                                                <h3>Quando os containers surgiram?</h3>
+                                        </section>
+                                        <section data-background-image="img/containers-chart.png" data-background-size="80%"></section>
+
+                                        <section>
+                                                <h3>Por que então que eles ficaram tão famosos atualmente?</h3>
+                                        </section>
+                                        <section data-background-image="img/confused.gif"></section>
+                                        <section data-background-image="img/docker-bg1.png" data-background-size="80%"></section>
+                                        <section>
+                                                <h3>Docker</h3>
+                                                <p class="fragment">Docker é um grande exemplo de como construir uma ferramenta viral e orientado ao desenvolvedor</p>
+                                        </section>
+
+                                        <section>
+                                                <h3>Algumas possíveis razões da rápida adoção</h3>
+                                                <p class="fragment">Portabilidade</p>
+                                                <p class="fragment">Performance</p>
+                                                <p class="fragment">Fácil configuração</p>
+                                                <p class="fragment">Docker Hub App-store</p>
+                                                <p class="fragment">API</p>
+                                                <aside class="notes"><ul>
+                                                        <li>A developer can figure out what Docker does, install it and do something useful with it in 15 minutes. I first heard this “rule” from Marten Mickos when talking about why MySQL was so successful: low friction to try it out, a simple concept and useful functionality.</li>
+                                                        <li>Docker is a great name and it has a cute logo. It resonates with what the product does and is easy to remember. Engineering-oriented founders sometimes seem to think that names and logos don’t matter if the product is good enough, but a great name can turbocharge adoption and build a valuable brand.</li>
+                                                        <li>The Docker product came from a non-threatening source, a small startup (DotCloud) that was able to broadly partner across the whole industry. If the same product had come from an established enterprise technology player, there would have been much more push-back from that player’s competitors, and the market would probably have split into several competing technologies.</li>
+                                                        </ul>
+                                                </aside>
+                                        </section>
+
+                                        <section>
+                                                <h3>Alguns pontos sobre o funcionamento dos containers</h3>
+                                        </section>
+
+                                        <section>
+                                                <h3>Docker - Demo</h3>
+                                                <ol>
+                                                        <li class="fragment">docker-machine start unik</li>
+                                                        <li class="fragment">eval $(docker-machine env unik)</li>
+                                                        <li class="fragment">docker pull gaetan/dockercraft</li>
+                                                        <li class="fragment">docker run -ti -p 5555:25565 --name minecraft minecraft</li>
+                                                </ol>
+                                        </section>
+
+                                        <section>
+                                                <h3>Cool stuff</h3>
+                                                <a href="https://www.youtube.com/watch?v=eZDlJgJf55o">Dockercraft</a>
+                                        </section>
+
+                                </section>
+
+                                <section>
+                                        <h3>Ok. Docker é foda!</h3>
+                                        <h3>Mas isso aqui é sobre o que pode ser o futuro né?</h3>
+                                </section>
+
+                                <section id="unikernels">
+                                        <section data-background-video="img/trip-to-the-future.mp4"></section>
+                                        <section data-background-image="img/future-city-aztech.jpg">
+                                                <h2 style="margin-top: -35%; margin-left: -10%; text-align: left;">Olhando o Futuro</h2>
+                                        </section>
+                                        <section>
+                                                <h3>Os containers não foram criados para diminuir o overhead?</h3>
+                                                <p>Mas se você olhar bem para a stack que é utilizada na cloud atualmente...</p>
+                                        </section>
+                                        <section data-background-image="img/container-stack.png" data-background-size="40%"></section>
+                                        <section data-background-image="img/rocket-fail.gif">
+                                                <aside class="notes">
+                                                        https://infoslack.com/unikernels/#/18
+                                                </aside>
+                                        </section>
+                                        <section data-background-image="img/reality-diagram.png" data-background-size="60%"></section>
+                                        <section><h3>Fui Enganado!?!?</h3></section>
+                                        <section data-background-image="img/yeah-yeah.jpg" data-background-size="60%"></section>
+                                        <section><h3>O que podemos fazer?</h3></section>
+
+                                        <section data-background-image="img/make-unikernel.png" data-background-size="60%"></section>
+                                        <section>
+                                                <h3>Unikernels</h3>
+                                                <p class="fragment">Unikernels são imagens especialiazadas, de enreçamento único contruídas utilizando-se um library operating system</p>
+                                        </section>
+                                        <section>
+                                                <h3>Kernels Specializados</h3>
+                                                <ul>
+                                                        <li class="fragment">MirageOS</li>
+                                                        <li class="fragment">Rumprun</li>
+                                                        <li class="fragment">Irmin</li>
+                                                </ul>
+                                        </section>
+                                        <section><h3>Quais são os Benefícios??</h3></section>
+                                        <section>
+                                                <h3>Segurança</h3>
+                                        </section>
+                                        <section data-background-image="img/venom-vuln.png" data-background-size="60%"></section>
+
+                                        <section><h3>Ultra velocidade de startup</h3></section>
+                                        <section data-background-image="img/unikernels-comparison.png" data-background-size="60%"></section>
+
+                                        <section>
+                                                <h3>Unikernel - Demo</h3>
+                                                <aside class="notes">
+                                                        docker-machine start unik
+                                                        eval $(docker-machine env unik)
+                                                        docker pull gaetan/dockercraft
+                                                        docker run -ti -p 5555:25565 --name minecraft minecraft
+                                                </aside>
+                                        </section>
+                                        <section>
+                                                <ol>
+                                                        <li class="fragment">git clone https://github.com/emc-advanced-dev/unik.git</p>
+                                                        <li class="fragment">cd unik</li>
+                                                        <li class="fragment">make binary</li>
+                                                        <li class="fragment">mv _build/unik /usr/local/bin/</li>
+                                                        <li class="fragment">docker-machine create -d virtualbox --virtualbox-ui-type "headless" unik</li>
+                                                </ol>
+                                        </section>
+                                        <section>
+                                                <h3>Configure a Host-Only Network on Virtualbox</h3>
+                                        </section>
+                                        <section>
+                                                <h3>Configure UniK daemon</h3>
+                                        </section>
+                                        <section>
+                                                <h3>Launch UniK and automatically deploy the Virtualbox Instance Listener</h3>
+                                        </section>
+                                        <section data-background-video="img/backup-plan.mp4"></section>
+
+                                        <section>
+                                                <a href="https://blog.docker.com/2016/05/docker-unikernels-open-source">Unikernel Talk</a>
+                                        </section>
+                                </section>
+
+                                <section>
+                                        <p>Após o interesse do própio Docker na tecnologia Unikernels</p>
+                                        <p class="fragment">Devemos cada vez mais ouvir falar desse assunto daqui pra frente </p>
+                                </section>
+                                <section>
+                                        <h3>Galera...</h3>
+                                        <h3 class="fragment">Muito Obrigado!</h3>
+                                </section>
+                                <section data-background="https://media.giphy.com/media/tLql6mMHC6wvK/giphy.gif"></section>
+
+                        </div>
+                </div>
+
+                <script src="lib/js/head.min.js"></script>
+                <script src="js/reveal.js"></script>
+
+                <script>
+                        // More info https://github.com/hakimel/reveal.js#configuration
+                        Reveal.initialize({
+                                history: true,
+
+                                // More info https://github.com/hakimel/reveal.js#dependencies
+                                dependencies: [
+                                        { src: 'plugin/markdown/marked.js' },
+                                        { src: 'plugin/markdown/markdown.js' },
+                                        { src: 'plugin/notes/notes.js', async: true },
+                                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                                ]
+                        });
+                </script>
+        </body>
+>>>>>>> First PT-BR Version
 </html>

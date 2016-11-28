@@ -31,12 +31,20 @@ $selectionBackgroundColor: #134674;
 
 // Fix links so they are not cut off
 .reveal a {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	line-height: 1.3em;
+=======
+        line-height: 1.3em;
+>>>>>>> First PT-BR Version
 }
 
 // Background generator
 @mixin bodyBackground() {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	@include radial-gradient( #add9e4, #f7fbfc );
+=======
+        @include radial-gradient( #add9e4, #f7fbfc );
+>>>>>>> First PT-BR Version
 }
 
 

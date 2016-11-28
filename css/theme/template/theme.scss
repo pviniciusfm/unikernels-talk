@@ -5,6 +5,7 @@
  *********************************************/
 
 body {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	@include bodyBackground();
 	background-color: $backgroundColor;
 }
@@ -20,12 +21,34 @@ body {
 	color: $selectionColor;
 	background: $selectionBackgroundColor;
 	text-shadow: none;
+=======
+        @include bodyBackground();
+        background-color: $backgroundColor;
+}
+
+.reveal {
+        font-family: $mainFont;
+        font-size: $mainFontSize;
+        font-weight: normal;
+        color: $mainColor;
+}
+
+::selection {
+        color: $selectionColor;
+        background: $selectionBackgroundColor;
+        text-shadow: none;
+>>>>>>> First PT-BR Version
 }
 
 .reveal .slides>section,
 .reveal .slides>section>section {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	line-height: 1.3;
 	font-weight: inherit;
+=======
+        line-height: 1.3;
+        font-weight: inherit;
+>>>>>>> First PT-BR Version
 }
 
 /*********************************************
@@ -38,6 +61,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	margin: $headingMargin;
 	color: $headingColor;
 
@@ -50,6 +74,20 @@ body {
 	text-shadow: $headingTextShadow;
 
 	word-wrap: break-word;
+=======
+        margin: $headingMargin;
+        color: $headingColor;
+
+        font-family: $headingFont;
+        font-weight: $headingFontWeight;
+        line-height: $headingLineHeight;
+        letter-spacing: $headingLetterSpacing;
+
+        text-transform: $headingTextTransform;
+        text-shadow: $headingTextShadow;
+
+        word-wrap: break-word;
+>>>>>>> First PT-BR Version
 }
 
 .reveal h1 {font-size: $heading1Size; }
@@ -58,7 +96,11 @@ body {
 .reveal h4 {font-size: $heading4Size; }
 
 .reveal h1 {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	text-shadow: $heading1TextShadow;
+=======
+        text-shadow: $heading1TextShadow;
+>>>>>>> First PT-BR Version
 }
 
 
@@ -67,14 +109,20 @@ body {
  *********************************************/
 
 .reveal p {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	margin: $blockMargin 0;
 	line-height: 1.3;
+=======
+        margin: $blockMargin 0;
+        line-height: 1.3;
+>>>>>>> First PT-BR Version
 }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	max-width: 95%;
 	max-height: 95%;
 }
@@ -85,11 +133,24 @@ body {
 
 .reveal em {
 	font-style: italic;
+=======
+        max-width: 95%;
+        max-height: 95%;
+}
+.reveal strong,
+.reveal b {
+        font-weight: bold;
+}
+
+.reveal em {
+        font-style: italic;
+>>>>>>> First PT-BR Version
 }
 
 .reveal ol,
 .reveal dl,
 .reveal ul {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	display: inline-block;
 
 	text-align: left;
@@ -110,12 +171,35 @@ body {
 
 .reveal ul ul ul {
 	list-style-type: circle;
+=======
+        display: inline-block;
+
+        text-align: left;
+        margin: 0 0 0 1em;
+}
+
+.reveal ol {
+        list-style-type: decimal;
+}
+
+.reveal ul {
+        list-style-type: disc;
+}
+
+.reveal ul ul {
+        list-style-type: square;
+}
+
+.reveal ul ul ul {
+        list-style-type: circle;
+>>>>>>> First PT-BR Version
 }
 
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
 .reveal ol ul {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	display: block;
 	margin-left: 40px;
 }
@@ -126,10 +210,23 @@ body {
 
 .reveal dd {
 	margin-left: 40px;
+=======
+        display: block;
+        margin-left: 40px;
+}
+
+.reveal dt {
+        font-weight: bold;
+}
+
+.reveal dd {
+        margin-left: 40px;
+>>>>>>> First PT-BR Version
 }
 
 .reveal q,
 .reveal blockquote {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	quotes: none;
 }
 
@@ -188,27 +285,102 @@ body {
 
 .reveal table th {
 	font-weight: bold;
+=======
+        quotes: none;
+}
+
+.reveal blockquote {
+        display: block;
+        position: relative;
+        width: 70%;
+        margin: $blockMargin auto;
+        padding: 5px;
+
+        font-style: italic;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+        .reveal blockquote p:first-child,
+        .reveal blockquote p:last-child {
+                display: inline-block;
+        }
+
+.reveal q {
+        font-style: italic;
+}
+
+.reveal pre {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: $blockMargin auto;
+
+        text-align: left;
+        font-size: 0.55em;
+        font-family: monospace;
+        line-height: 1.2em;
+
+        word-wrap: break-word;
+
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+}
+.reveal code {
+        font-family: monospace;
+}
+
+.reveal pre code {
+        display: block;
+        padding: 5px;
+        overflow: auto;
+        max-height: 400px;
+        word-wrap: normal;
+}
+
+.reveal table {
+        margin: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+.reveal table th {
+        font-weight: bold;
+>>>>>>> First PT-BR Version
 }
 
 .reveal table th,
 .reveal table td {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	text-align: left;
 	padding: 0.2em 0.5em 0.2em 0.5em;
 	border-bottom: 1px solid;
+=======
+        text-align: left;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        border-bottom: 1px solid;
+>>>>>>> First PT-BR Version
 }
 
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	text-align: center;
+=======
+        text-align: center;
+>>>>>>> First PT-BR Version
 }
 
 .reveal table th[align="right"],
 .reveal table td[align="right"] {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	text-align: right;
+=======
+        text-align: right;
+>>>>>>> First PT-BR Version
 }
 
 .reveal table tbody tr:last-child th,
 .reveal table tbody tr:last-child td {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	border-bottom: none;
 }
 
@@ -228,6 +400,27 @@ body {
 
 .reveal small * {
 	vertical-align: top;
+=======
+        border-bottom: none;
+}
+
+.reveal sup {
+        vertical-align: super;
+}
+.reveal sub {
+        vertical-align: sub;
+}
+
+.reveal small {
+        display: inline-block;
+        font-size: 0.6em;
+        line-height: 1.2em;
+        vertical-align: top;
+}
+
+.reveal small * {
+        vertical-align: top;
+>>>>>>> First PT-BR Version
 }
 
 
@@ -236,6 +429,7 @@ body {
  *********************************************/
 
 .reveal a {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	color: $linkColor;
 	text-decoration: none;
 
@@ -253,6 +447,25 @@ body {
 .reveal .roll span:after {
 	color: #fff;
 	background: darken( $linkColor, 15% );
+=======
+        color: $linkColor;
+        text-decoration: none;
+
+        -webkit-transition: color .15s ease;
+           -moz-transition: color .15s ease;
+                transition: color .15s ease;
+}
+        .reveal a:hover {
+                color: $linkColorHover;
+
+                text-shadow: none;
+                border: none;
+        }
+
+.reveal .roll span:after {
+        color: #fff;
+        background: darken( $linkColor, 15% );
+>>>>>>> First PT-BR Version
 }
 
 
@@ -261,6 +474,7 @@ body {
  *********************************************/
 
 .reveal section img {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	margin: 15px 0px;
 	background: rgba(255,255,255,0.12);
 	border: 4px solid $mainColor;
@@ -285,6 +499,32 @@ body {
 
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 	}
+=======
+        margin: 15px 0px;
+        background: rgba(255,255,255,0.12);
+        border: 4px solid $mainColor;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+        .reveal section img.plain {
+                border: 0;
+                box-shadow: none;
+        }
+
+        .reveal a img {
+                -webkit-transition: all .15s linear;
+                   -moz-transition: all .15s linear;
+                        transition: all .15s linear;
+        }
+
+        .reveal a:hover img {
+                background: rgba(255,255,255,0.2);
+                border-color: $linkColor;
+
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+        }
+>>>>>>> First PT-BR Version
 
 
 /*********************************************
@@ -293,21 +533,34 @@ body {
 
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	border-right-color: $linkColor;
+=======
+        border-right-color: $linkColor;
+>>>>>>> First PT-BR Version
 }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	border-left-color: $linkColor;
+=======
+        border-left-color: $linkColor;
+>>>>>>> First PT-BR Version
 }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	border-bottom-color: $linkColor;
+=======
+        border-bottom-color: $linkColor;
+>>>>>>> First PT-BR Version
 }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	border-top-color: $linkColor;
 }
 
@@ -325,6 +578,25 @@ body {
 
 .reveal .controls .navigate-down.enabled:hover {
 	border-top-color: $linkColorHover;
+=======
+        border-top-color: $linkColor;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+        border-right-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+        border-left-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+        border-bottom-color: $linkColorHover;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+        border-top-color: $linkColorHover;
+>>>>>>> First PT-BR Version
 }
 
 
@@ -333,6 +605,7 @@ body {
  *********************************************/
 
 .reveal .progress {
+<<<<<<< 9688f78d275b57a5e42290870c1e6620afea5edb
 	background: rgba(0,0,0,0.2);
 }
 	.reveal .progress span {
@@ -344,3 +617,14 @@ body {
 	}
 
 
+=======
+        background: rgba(0,0,0,0.2);
+}
+        .reveal .progress span {
+                background: $linkColor;
+
+                -webkit-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+                   -moz-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+                        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+        }
+>>>>>>> First PT-BR Version
